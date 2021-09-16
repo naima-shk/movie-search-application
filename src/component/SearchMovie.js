@@ -12,7 +12,7 @@ function SearchMovie() {
      console.log('submitting');
      //const query='Jurassic Park';
 
-    //const url= `https://api.themoviedb.org/3/movie/550?api_key=c84c8884b8de590025943721620b2ce2&language=en-US&query=${query}include_adult=false`;
+    const url= `https://api.themoviedb.org/3/movie/550?api_key=c84c8884b8de590025943721620b2ce2&language=en-US&query=${query}include_adult=false`;
    try{
     const res= await fetch(url)
     const data= await res.json();
