@@ -29,7 +29,12 @@ function SearchMovie() {
             <button className='button' type='submit' >Search</button>
         </form>
         <div className='card-list'>
-            {movies.map(movie => movie.title)}
+            {movies.map(movie => (
+                <div className='card'>
+                    <img className='card--image'  src={`https://www.imdb.com/title/tt0107290/mediaviewer/rm3913805824/${movie.poster_path}`} alt={movie.title + 'poster'}/>
+                </div>
+
+            ))}
 
         </div>
         </>
